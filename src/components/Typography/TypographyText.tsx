@@ -27,14 +27,14 @@ const Text = styled('span', {
     outline: {
       true: {
         color: 'transparent !important',
-        WebkitTextStrokeColor: 'var(--maximeheckel-colors-typeface-primary)',
+        WebkitTextStrokeColor: 'var(--text-primary)',
         WebkitTextStrokeWidth: '1px',
       },
     },
     spaced: {
       true: {
         letterSpacing: '0.3px',
-        lineHeight: 1.9,
+        lineHeight: 1.75,
       },
     },
     family: {
@@ -56,7 +56,7 @@ const Text = styled('span', {
         fontSize: 'var(--font-size-1)',
       },
       2: {
-        fontSize: 'var(--font-size-2)',
+        fontSize: 'var(--font-size-1)',
       },
       3: {
         fontSize: 'var(--font-size-3)',
@@ -83,26 +83,23 @@ const Text = styled('span', {
     },
     variant: {
       default: { color: 'currentColor' },
-      primary: { color: 'var(--maximeheckel-colors-typeface-primary)' },
-      secondary: { color: 'var(--maximeheckel-colors-typeface-secondary)' },
-      tertiary: { color: 'var(--maximeheckel-colors-typeface-tertiary)' },
-      info: { color: 'var(--maximeheckel-colors-brand)' },
-      success: { color: 'var(--maximeheckel-colors-success)' },
-      warning: { color: 'var(--maximeheckel-colors-warning)' },
-      danger: { color: 'var(--maximeheckel-colors-danger)' },
+      primary: { color: 'var(--text-primary)' },
+      secondary: { color: 'var(--text-secondary)' },
+      tertiary: { color: 'var(--text-tertiary)' },
+      info: { color: 'var(--accent)' },
+      success: { color: 'var(--success)' },
+      warning: { color: 'var(--warning)' },
+      danger: { color: 'var(--danger)' },
     },
     weight: {
-      1: {
-        fontWeight: 'var(--font-weight-1)',
-      },
       2: {
-        fontWeight: 'var(--font-weight-2)',
+        fontWeight: 'var(--font-weight-400)',
       },
       3: {
-        fontWeight: 'var(--font-weight-3)',
+        fontWeight: 'var(--font-weight-500)',
       },
       4: {
-        fontWeight: 'var(--font-weight-4)',
+        fontWeight: 'var(--font-weight-600)',
       },
     },
     gradient: {

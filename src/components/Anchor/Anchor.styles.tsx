@@ -3,23 +3,23 @@ import { styled } from 'src/lib/stitches.config';
 export const StyledAnchor = styled('a', {
   fontSize: 'inherit',
   lineHeight: 'inherit',
-  color: 'var(--color, var(--maximeheckel-colors-brand))',
+  color: 'var(--color, var(--accent))',
   fontWeight: 500,
   wordBreak: 'break-word',
   textDecoration: 'none',
   outline: 'none',
   transition: 'border-color 0.3s ease, color 0.3s ease',
 
-  '--hover-color': 'var(--maximeheckel-colors-typeface-primary)',
+  '--hover-color': 'var(--text-primary)',
 
   '&:focus': {
-    '--color': 'var(--hover-color, var(--maximeheckel-colors-brand))',
+    '--color': 'var(--hover-color, var(--accent))',
     '--hover-translation-distance': 'var(--arrow-translation, 0)',
   },
 
   '@media (hover: hover) and (pointer: fine)': {
     '&:hover': {
-      '--color': 'var(--hover-color, var(--maximeheckel-colors-brand))',
+      '--color': 'var(--hover-color, var(--accent))',
       ' --hover-translation-distance': 'var(--arrow-translation, 0)',
     },
   },
@@ -27,7 +27,7 @@ export const StyledAnchor = styled('a', {
   variants: {
     discreet: {
       true: {
-        '--color': 'var(--maximeheckel-colors-typeface-tertiary)',
+        '--color': 'var(--text-tertiary)',
       },
     },
     arrow: {
@@ -94,18 +94,18 @@ export const StyledAnchor = styled('a', {
     },
     underline: {
       true: {
-        borderBottom: '2px solid',
+        borderBottom: '1px solid',
         borderColor: 'var(--border-color, transparent)',
 
         '--hover-color': 'unset',
 
         '&:focus': {
-          '--border-color': 'hsl(var(--palette-blue-40))',
+          '--border-color': 'var(--accent)',
         },
 
         '@media (hover: hover) and (pointer: fine)': {
           '&:hover': {
-            '--border-color': 'hsl(var(--palette-blue-40))',
+            '--border-color': 'var(--accent)',
           },
         },
       },

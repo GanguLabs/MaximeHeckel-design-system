@@ -22,9 +22,9 @@ const Summary = (props: SummaryProps) => {
           css={{
             position: 'absolute',
             right: 'var(--space-4)',
-            top: 'var(--space-5)',
+            top: 22,
             borderRadius: '50%',
-            background: 'var(--maximeheckel-colors-emphasis)',
+            background: 'var(--emphasis)',
             width: 'var(--space-6)',
             height: 'var(--space-6)',
           }}

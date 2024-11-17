@@ -8,8 +8,8 @@ export const StyledListItem = styled('li', {
   letterSpacing: '0.3px',
 
   'span[data-list-item]': {
-    paddingRight: '8px',
-    transform: 'translateY(4px)',
+    paddingRight: '6px',
+    transform: 'translateY(3px)',
   },
 
   '& > ol': {
@@ -54,8 +54,8 @@ export const StyledList = styled('div', {
 
           '&:before': {
             content: "counters(li, '.') '. '",
-            color: 'var(--maximeheckel-colors-brand)',
-            marginRight: '8px',
+            color: 'var(--accent)',
+            marginRight: '6px',
           },
         },
       },

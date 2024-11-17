@@ -9,22 +9,21 @@ export const StyledInput = styled('input', {
   position: 'relative',
   display: 'block',
   margin: 0,
-  padding: 'var(--input-inner-padding, 8px 40px 8px 16px)',
+  padding: 'var(--input-inner-padding, 5px 40px 5px 16px)',
 
-  fontSize: 'var(--font-size-2)',
+  fontSize: 'var(--font-size-1)',
   fontFamily: 'inherit',
   lineHeight: '26px',
-  color: 'var(--maximeheckel-colors-typeface-primary)',
+  color: 'var(--text-primary)',
 
   borderRadius: 'var(--border-radius-1)',
-  border:
-    '1px solid var(--border-color, var(--maximeheckel-form-input-border))',
-  background: 'var(--background, var(--maximeheckel-form-input-background))',
+  border: '1px solid var(--border-color, var(--input-border))',
+  background: 'var(--background, var(--input-background))',
 
   transition: 'border-color 0.3s, box-shadow 0.3s',
 
   '&::placeholder': {
-    color: 'var(--maximeheckel-colors-typeface-tertiary)',
+    color: 'var(--text-tertiary)',
     opacity: 0.5,
   },
 
@@ -33,7 +32,7 @@ export const StyledInput = styled('input', {
   },
 
   '&:disabled': {
-    '--background': 'var(--maximeheckel-form-input-disabled)',
+    '--background': 'var(--input-disabled)',
     cursor: 'not-allowed',
     opacity: 0.65,
     '& + label': {
@@ -44,7 +43,7 @@ export const StyledInput = styled('input', {
   variants: {
     variant: {
       email: {
-        '--input-inner-padding': '8px 16px 8px 40px',
+        '--input-inner-padding': '5px 16px 5px 40px',
       },
       password: {},
       search: {},
@@ -59,14 +58,13 @@ export const StyledInputWrapper = styled('div', {
   position: 'relative',
   width: '100%',
 
-  '--shadow-hover-primary':
-    '0 2px 20px -2px var(--maximeheckel-form-input-focus)',
+  '--shadow-hover-primary': '0 2px 20px -2px var(--input-focus)',
 
   svg: {
     display: 'block',
     position: 'absolute',
     fill: 'none',
-    stroke: 'var(--icon-color, var(--maximeheckel-form-input-border))',
+    stroke: 'var(--icon-color, var(--input-border))',
     strokeLinecap: 'round',
     strokeLinejoin: 'round',
     strokeWidth: 1.6,
@@ -80,12 +78,12 @@ export const StyledInputWrapper = styled('div', {
       '&:not(:disabled)': {
         '&:not(:focus)': {
           '& + svg': {
-            '--icon-color': 'var(--maximeheckel-form-input-active)',
+            '--icon-color': 'var(--input-active)',
           },
 
           '& + button': {
             svg: {
-              '--icon-color': 'var(--maximeheckel-form-input-active)',
+              '--icon-color': 'var(--input-active)',
             },
           },
         },
@@ -97,13 +95,13 @@ export const StyledInputWrapper = styled('div', {
     input: {
       '&:not(:disabled)': {
         '--shadow': 'var(--shadow-hover-primary)',
-        '--border-color': 'var(--maximeheckel-form-input-active)',
+        '--border-color': 'var(--input-active)',
         '& + svg': {
-          '--icon-color': 'var(--maximeheckel-form-input-active)',
+          '--icon-color': 'var(--input-active)',
         },
         '& + button': {
           svg: {
-            '--icon-color': 'var(--maximeheckel-form-input-active)',
+            '--icon-color': 'var(--input-active)',
           },
         },
       },
@@ -111,8 +109,8 @@ export const StyledInputWrapper = styled('div', {
   },
 
   '&:focus-within': {
-    '--border-color': 'var(--maximeheckel-form-input-active)',
-    '--icon-color': 'var(--maximeheckel-form-input-active)',
+    '--border-color': 'var(--input-active)',
+    '--icon-color': 'var(--input-active)',
     '--shadow': 'var(--shadow-hover-primary)',
   },
 
@@ -120,7 +118,7 @@ export const StyledInputWrapper = styled('div', {
     variant: {
       email: {
         svg: {
-          top: '12px',
+          top: '9px',
           left: '12px',
         },
 
@@ -129,7 +127,7 @@ export const StyledInputWrapper = styled('div', {
           '--at-sign-delay': '0s',
           '--tick': '0',
           '--tick-delay': '0.5s',
-          '--icon-color': 'hsl(var(--palette-green-65))',
+          '--icon-color': 'var(--green-1000)',
         },
       },
       password: {
@@ -139,7 +137,7 @@ export const StyledInputWrapper = styled('div', {
           MozAppearance: 'none',
           height: '22px',
           width: '22px',
-          top: '12px',
+          top: '9px',
           right: '14px',
           background: 'none',
           border: 'none',
@@ -150,7 +148,7 @@ export const StyledInputWrapper = styled('div', {
           padding: '0px',
 
           '&:focus-visible': {
-            boxShadow: '0 0 0 2px var(--maximeheckel-colors-brand)',
+            boxShadow: '0 0 0 2px var(--accent)',
           },
 
           '&:disabled': {

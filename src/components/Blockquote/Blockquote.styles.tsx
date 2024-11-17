@@ -9,11 +9,11 @@ export const BlockquoteWrapper = styled('blockquote', {
   position: 'relative',
   left: '50%',
   right: '50%',
-  width: '100vw',
+  width: 'calc(var(--vw, 1vw) * 100)',
 
   paddingTop: '40px',
   paddingBottom: '40px',
-  background: 'var(--maximeheckel-colors-emphasis)',
+  background: 'var(--emphasis)',
   backdropFilter: 'blur(6px)',
 });
 
@@ -23,13 +23,13 @@ export const BlockquoteContent = styled(Box, {
   textAlign: 'center',
   width: '100%',
   margin: '0 auto',
-  color: 'var(--maximeheckel-colors-typeface-primary)',
+  color: 'var(--text-primary)',
 
   p: {
     marginBottom: 0,
     fontSize: 'var(--font-size-6) !important',
     lineHeight: '1.6818 !important',
-    fontWeight: 'var(--font-weight-2) !important',
+    fontWeight: 'var(--font-weight-400) !important',
     fontStyle: 'italic',
   },
 });

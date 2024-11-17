@@ -8,7 +8,7 @@ export const StyledPill = styled('span', {
   minWidth: '40px',
   height: '28px',
   fontSize: 'var(--font-size-1)',
-  fontWeight: 'var(--font-weight-3)',
+  fontWeight: 'var(--font-weight-500)',
   cursor: 'default',
   userSelect: 'none',
   borderRadius: 'var(--border-radius-1)',
@@ -22,38 +22,21 @@ export const StyledPill = styled('span', {
     },
     variant: {
       info: {
-        '--pill-background': 'var(--maximeheckel-colors-emphasis)',
-        '--pill-color': 'var(--maximeheckel-colors-brand)',
+        '--pill-background': 'var(--emphasis)',
+        '--pill-color': 'var(--accent)',
       },
       success: {
-        '--pill-background': 'var(--maximeheckel-colors-success-emphasis)',
-        '--pill-color': 'hsl(var(--palette-green-80))',
+        '--pill-background': 'var(--success-emphasis)',
+        '--pill-color': 'var(--success)',
       },
       warning: {
-        '--pill-background': 'var(--maximeheckel-colors-warning-emphasis)',
-        '--pill-color': 'hsl(var(--palette-orange-80))',
+        '--pill-background': 'var(--warning-emphasis)',
+        '--pill-color': 'var(--warning)',
       },
       danger: {
-        '--pill-background': 'var(--maximeheckel-colors-danger-emphasis)',
-        '--pill-color': 'var(--maximeheckel-colors-danger)',
+        '--pill-background': 'var(--danger-emphasis)',
+        '--pill-color': 'var(--danger)',
       },
     },
   },
-
-  compoundVariants: [
-    {
-      variant: 'success',
-      dark: true,
-      css: {
-        '--pill-color': 'hsla(var(--palette-green-45))',
-      },
-    },
-    {
-      variant: 'warning',
-      dark: true,
-      css: {
-        '--pill-color': 'hsla(var(--palette-orange-45))',
-      },
-    },
-  ],
 });
